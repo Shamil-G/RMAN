@@ -1,0 +1,10 @@
+CONFIGURE CONTROLFILE AUTOBACKUP ON;
+#CONFIGURE CONTROLFILE AUTOBACKUP format for device type disk to '/zfssa/dbm01/backup/control_files/controlfile_%F';
+CONFIGURE CONTROLFILE AUTOBACKUP format for device type disk clear;
+# На NFS не работает - snapshot controlfile
+#CONFIGURE snapshot controlfile name to '/zfssa/dbm01/backup/control_files/snapcf_.f';
+CONFIGURE snapshot controlfile name clear;
+show snapshot controlfile name;
+CONFIGURE ARCHIVELOG DELETION POLICY TO BACKED UP 2 TIMES TO DISK;
+CONFIGURE RETENTION POLICY TO RECOVERY WINDOW OF 30 DAYS;
+show all;

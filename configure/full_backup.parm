@@ -1,0 +1,1 @@
+backup database format '/zfssa/dbm01/backup/full_backup/%d_%s_%p_${TIME_BACKUP}';

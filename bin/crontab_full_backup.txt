@@ -1,0 +1,2 @@
+01 00 * * * /home/oracle/bin/rman_full_backup.bat >> /home/oracle/bin/rman_full_backup.log>&1
+01 02 * * * /home/oracle/bin/rman_increment_backup_recoc1.bat >> /home/oracle/bin/rman_increment_backup.log>&1
